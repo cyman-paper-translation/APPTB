@@ -1,3 +1,15 @@
+<script>
+window.MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-svg.js"></script>
+
 # Asynchronous Programs with Prioritized Task-Buffers
 
 原文链接： https://dl.acm.org/doi/pdf/10.1145/2393596.2393652
