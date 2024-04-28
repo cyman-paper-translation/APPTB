@@ -312,11 +312,3 @@ $$
 #### 参考文献
 
 略
-
- <script src="https://utteranc.es/client.js"
-         repo="cyman-paper-translation/main-page"
-         issue-term="APPTB"
-         theme="github-light"
-         crossorigin="anonymous"
-         async>
- </script>
