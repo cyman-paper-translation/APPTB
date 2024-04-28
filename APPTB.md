@@ -166,8 +166,8 @@ $$
 $$
 包含在图3中所列出的代码转化 $((·))^K_M$，有效性的谓词 $S^K_M: \space Vals^2 \rightarrow B$ 表示 $((P))^K_M$ 的执行何时对应于 $P$ 的一次有效执行，以及一个从可达性对 $((P))^K_M$ 到  $P$ 的可达性对的映射函数$f^K_M(g_0,g_f): \space Vals^2 \rightarrow Vals^2$ 定义如下：
 
-+ $S^K_M (g0,gf) \stackrel{\mathrm{def}}{=} G[1..k-1](g_0) = G[0..K-2](g_f)$
-+ $ f^K_M(g_0,g_f) \stackrel{\mathrm{def}}{=} \langle G[0](g_0),\space G[K-1](g_f)\rangle $
++ $S^K_M (g0,gf) \stackrel{\mathrm{def}}{=} G[1..k-1] (g_0) = G[0..K-2] (g_f)$
++ $ f^K_M(g_0,g_f) \stackrel{\mathrm{def}}{=} \langle G[0] (g_0),\space G[K-1] (g_f)\rangle $
 
 基于这种对应关系，我们将 $P$ 的 $K$ 轮多缓冲区轮询执行的状态可达性简化为 $((P))^K_M$ 的状态可达性；这样的规约是对 $P$ 的行为的一种下近似。
 
@@ -213,8 +213,8 @@ $$
 $$
 其中代码转化 $\Theta^K_Y$ 的含义在图四中被列出，有效性的谓词 $S^K_Y$ ，以及一个从可达性到事实的映射函数$f^K_Y$ 定义如下：
 
-+ $S^K_Y (g0,gf) \stackrel{\mathrm{def}}{=} G[1..k-1](g_0) = G[0..K-2](g_f)$
-+ $ f^K_Y(g_0,g_f) \stackrel{\mathrm{def}}{=} \langle G[0](g_0),\space G[K-1](g_f)\rangle $
++ $S^K_Y (g0,gf) \stackrel{\mathrm{def}}{=} G[1..k-1] (g_0) = G[0..K-2] (g_f)$
++ $ f^K_Y(g_0,g_f) \stackrel{\mathrm{def}}{=} \langle G[0] (g_0),\space G[K-1] (g_f)\rangle $
 
 鉴于这种对应关系，我们将 $P$ 的 $K$ 轮循环执行的状态可达性规约为 $((P))^K_Y$的状态可达性；我们以此通过限制相同级别任务之间的交错运行和重排序来对 $P$ 的行为进行下近似。
 
@@ -246,8 +246,8 @@ $$
 $$
 其中代码转化 $((·))_P$ 的含义在图 5 中被列出，有效性的谓词 $S_P$ ，以及一个从可达性到事实的映射函数$f_P$ 定义如下：
 
-+ $S_P (g0,gf) \stackrel{\mathrm{def}}{=} done(g_f) = true \land G[0](g_0) = g(g_f)$ 并且
-+ $ f_P(g_0,g_f) \stackrel{\mathrm{def}}{=} \langle g(g_0),\space G[0](g_f)\rangle $
++ $S_P (g0,gf) \stackrel{\mathrm{def}}{=} done(g_f) = true \land G[0] (g_0) = g(g_f)$ 并且
++ $ f_P(g_0,g_f) \stackrel{\mathrm{def}}{=} \langle g(g_0),\space G [0] (g_f)\rangle $
 
 鉴于这种对应关系，我们将优先级为 $P$ 的依赖于单缓冲区调度器的异步程序的状态可达性规约为顺序程序 $((·))_P$ 的状态可达性。
 
